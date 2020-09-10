@@ -1,0 +1,160 @@
+﻿Q1)
+date
+date +%a
+Tue
+shweta@shweta:~$ date +%B
+September
+shweta@shweta:~$ date +%Y
+2020
+shweta@shweta:~$ date +%F
+2020-09-08
+shweta@shweta:~$ date +%T
+08:02:47
+ date +%B' '%d' '%Y
+September 08 2020
+
+cal
+cal 2020
+cal 2020 -m5
+
+shweta@shweta:~$ who
+shweta   :0           2020-09-08 06:53 (:0)
+shweta@shweta:~$ whoami
+shweta
+shweta@shweta:~$ uname
+Linux
+shweta@shweta:~$ logname
+shweta
+
+Q2)
+A) shweta@shweta:~$ cd a
+shweta@shweta:~/a$  touch a.txt b.txt c.txt
+shweta@shweta:~/a$ ls
+a.txt  b.txt  c.txt
+shweta@shweta:~/a$ cd ..
+shweta@shweta:~$ cd b
+shweta@shweta:~/b$ touch a.txt b.txt c.txt
+shweta@shweta:~/b$ ls
+a.txt  b.txt  c.txt
+shweta@shweta:~/b$ cd ..
+shweta@shweta:~$ cd c
+shweta@shweta:~/c$ touch a.txt b.txt c.txt
+shweta@shweta:~/c$ ls
+a.txt  b.txt  c.txt
+shweta@shweta:~$ cp -r c a
+
+B)
+shweta@shweta:~$ mv b c
+
+C)
+shweta@shweta:~$ alias l="ls -lh"
+shweta@shweta:~$ l
+
+Q3)
+A)
+shweta@shweta:~$ cat >  file1.txt
+inside file1
+shweta@shweta:~$ cat >  file2.txt
+Inside file2    
+shweta@shweta:~$ cat >  file3.txt
+Inside file3
+shweta@shweta:~$ cat >  file4.txt
+Inside file4
+shweta@shweta:~$ cat >  file5.txt
+Inside file5
+
+shweta@shweta:~$ grep 's' file1.txt file2.txt
+file1.txt:inside file1
+file2.txt:Inside file2
+
+shweta@shweta:~$ cat file1.txt file2.txt file3.txt
+inside file1
+Inside file2
+Inside file3
+
+C)
+shweta@shweta:~$ touch 1.txt 2.txt 3.txt 4.txt 5.txt
+
+D)
+shweta@shweta:~$ rm -r a b c
+
+Q4)
+a)shweta@shweta:~$ vi file1.txt
+
+shweta@shweta:~$ cat file1
+
+b)shweta@shweta:~$ cat -n file1.txt
+     1	inside file 1
+     2	using vi editor
+shweta@shweta:~$ cat -b file1.txt
+     1	inside file 1
+     2	using vi editor
+
+c)shweta@shweta:~$ tac file1.txt
+using vi editor
+inside file 1
+
+d)shweta@shweta:~$ cat file.txt file2.txt >>destfile
+shweta@shweta:~$ cat destfile
+Inside file.txt
+Inside file2
+
+Q5)
+a)shweta@shweta:~$ column f1.txt
+
+b)shweta@shweta:~$ sort f1.txt           #Asc
+shweta@shweta:~$ sort -r f1.txt		  #desc
+
+c)
+shweta@shweta:~$ touch .shweta.txt      //hidden file
+shweta@shweta:~$ mkdir hidden
+shweta@shweta:~$ cd hidden
+shweta@shweta:~/hidden$ mkdir .h1      //hidden dir
+shweta@shweta:~$ ls -a
+
+d)
+shweta@shweta:~$ touch -t 202011100130 a.txt
+ls -t
+ls -rt
+
+------------------------------------------------------------------------------
+
+Q1)
+mkdir shweta
+touch a.txt b.txt c.txt d.sh
+
+a)
+chmod 600 a.txt b.txt
+
+b)
+chmod 200 c.txt
+
+c)
+cat > d.sh
+#bin/sh
+ls -lh
+
+chmod 100 d.sh
+
+Q2)
+shweta@shweta:~$ chmod 100 shweta
+//not able to open the files which are inside dir
+
+Q3)
+
+ chmod 600 shweta
+ 
+ Q5)
+ echo>>"Hi>>a.txt
+
+
+
+
+
+
+
+
+
+
+
+
