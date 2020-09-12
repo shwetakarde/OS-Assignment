@@ -117,6 +117,14 @@ shweta@shweta:~$ touch -t 202011100130 a.txt
 ls -t
 ls -rt
 
+e)
+shweta@shweta:~$ ls -R
+
+f)
+ls -l
+
+g)
+ls -ld
 ------------------------------------------------------------------------------
 
 Q1)
@@ -124,28 +132,126 @@ mkdir shweta
 touch a.txt b.txt c.txt d.sh
 
 a)
-chmod 600 a.txt b.txt
+chmod u+rw a.txt b.txt
 
 b)
-chmod 200 c.txt
+chmod u+w c.txt
 
 c)
+chmod u+x d.sh
+
 cat > d.sh
 #bin/sh
 ls -lh
 
-chmod 100 d.sh
+
 
 Q2)
-shweta@shweta:~$ chmod 100 shweta
-//not able to open the files which are inside dir
+shweta@shweta:~/Desktop/shweta/demo$ chmod a+x ../
+
 
 Q3)
 
- chmod 600 shweta
- 
- Q5)
- echo>>"Hi>>a.txt
+shweta@shweta:~/Desktop/shweta/demo$ chmod a+r ../
+
+Q4)
+shweta@shweta:~$ echo *
+
+Q5)
+echo */*
+
+Q6)
+echo *.conf
+
+Q7)
+shweta@shweta:~/Desktop/shweta$ echo shweta karde >> a.txt
+
+-----------------------------------------------------------------------------
+Q1)
+1)
+shweta@shweta:~/Desktop/shweta$ mkdir -p a/b/c
+
+
+2)
+shweta@shweta:~/Desktop/shweta$ touch a/.a2.txt
+
+shweta@shweta:~/Desktop/shweta/a$ touch b/.b2.txt
+shweta@shweta:~/Desktop/shweta/a$ touch b/c/.c2.txt
+
+
+3)
+shweta@shweta:~/Desktop/shweta$ touch ./a/a1.txt
+
+
+shweta@shweta:~/Desktop/shweta/a$ touch ./b/b1.txt ./b/c/c1.txt
+
+4)
+shweta@shweta:~/Desktop/shweta/a$ cp -r b/c ./
+
+5)
+shweta@shweta:~/Desktop/shweta/a$ cp a1.txt b
+---------------
+
+Q2)
+shweta@shweta:~/Desktop/shweta/a/b$ chmod a+r c
+
+Q3)
+shweta@shweta:~/Desktop/shweta/a$ cp -r b/c ..
+
+Q4)
+shweta@shweta:~/Desktop/shweta/a$ mkdir b/data
+
+Q5)
+shweta@shweta:~/Desktop/shweta/a$ chmod a+rw b
+
+
+Q6)
+shweta@shweta:~/Desktop/shweta/a$ mkdir b/data2
+
+Q7)
+shweta@shweta:~/Desktop/shweta/a$ touch b/data.txt
+
+Q8)
+shweta@shweta:~/Desktop/shweta/a$ mv b/c a
+
+shweta@shweta:~/Desktop/shweta/a$ ls
+a  a1.txt  b  c  shweta
+shweta@shweta:~/Desktop/shweta/a$ cd a
+shweta@shweta:~/Desktop/shweta/a/a$ ls
+c1.txt
+
+
+Q9)
+shweta@shweta:~/Desktop/shweta/a$ chmod a+x a
+
+Q14)
+shweta@shweta:~/Desktop/shweta$ chmod u+rwx a
+
+Q15)
+shweta@shweta:~/Desktop/shweta$ mkdir a/sample
+
+Q16)
+
+shweta@shweta:~/Desktop/shweta/a$ mkdir ../x
+
+
+Q17)
+shweta@shweta:~/Desktop/shweta$ mv x a
+
+Q18)
+shweta@shweta:~/Desktop/shweta$ mkdir movies
+
+Q19)
+shweta@shweta:~/Desktop/shweta$ chgrp sudo movies
+
+
+Q20)
+shweta@shweta:~/Desktop/shweta$ sudo chgrp avahi  movies
+
+
+Q25)
+shweta@shweta:~/Desktop/shweta$ rm -rf a.txt
+
 
 
 
